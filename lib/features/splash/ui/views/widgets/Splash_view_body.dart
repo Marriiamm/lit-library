@@ -32,22 +32,22 @@ class _SplashScreenBodyState extends State<SplashScreenBody>
       decoration: const BoxDecoration(
         color: Colors.white,
         image: DecorationImage(
-            image: AssetImage('assets/images/Chatter.png'), fit: BoxFit.cover
+            image: AssetImage('assets/images/splashBackground.png'), fit: BoxFit.cover
             ),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          const SizedBox(height: 160,),
           AnimatedBuilder(
               animation: splashAnimation,
               builder: (contect, _) {
                 return SlideTransition(
                   position: splashAnimation,
                   child: Image.asset(
-                    'assets/images/splash.png',
-                    height: 200,
-                    width: 200,
+                    'assets/images/splashImage.png',
+                    
                   ),
                 );
               }),
@@ -86,14 +86,7 @@ class SplashTextAnimation extends StatelessWidget {
         builder: (contect, _) {
           return SlideTransition(
             position: splashAnimation,
-            child: const Text(
-              "RawMart",
-              style: TextStyle(
-                fontSize: 17,
-                fontWeight: FontWeight.w400,
-              ),
-              textAlign: TextAlign.center,
-            ),
+            child: Image.asset("assets/icons/Lit_Libraryy.png",height: 90,width: 170,),
           );
         });
   }
