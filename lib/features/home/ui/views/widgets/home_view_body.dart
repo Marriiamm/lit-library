@@ -25,7 +25,7 @@ class HomeViewBody extends StatelessWidget {
         ),
         Text(
           "Best Seller",
-          style: Styles.titleMedium,
+          style: Styles.textStyle20,
         ),
         Divider(
           indent: 30,

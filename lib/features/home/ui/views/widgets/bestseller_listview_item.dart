@@ -30,8 +30,9 @@ class BestSellerListItem extends StatelessWidget {
               children: [
                 Text(
                   "Harry potter and the goblet of fire",
-                  style: Styles.titleMedium,
-                  maxLines: 2,
+                  style: Styles.textStyle16,
+                  overflow: TextOverflow.ellipsis,
+          maxLines: 2,
                 ),
               ],
             ),
