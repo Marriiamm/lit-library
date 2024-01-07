@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lit_library/core/utils/styles.dart';
 
-import '../../../../../core/utils/assets_data.dart';
+import 'bestseller_listview_item.dart';
 import 'books_listview.dart';
 import 'custom_app_bar.dart';
 
@@ -25,7 +25,7 @@ class HomeViewBody extends StatelessWidget {
         ),
         Text(
           "Best Seller",
-          //style: Styles.titleMedium,
+          style: Styles.titleMedium,
         ),
         Divider(
           indent: 30,
@@ -36,7 +36,7 @@ class HomeViewBody extends StatelessWidget {
         SizedBox(
           height: 16,
         ),
-        //BestSellerListItem(),
+        BestSellerListItem(),
       ],
     );
   }
