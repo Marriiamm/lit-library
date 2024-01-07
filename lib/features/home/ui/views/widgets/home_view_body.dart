@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:lit_library/core/utils/styles.dart';
+
+import '../../../../../core/utils/assets_data.dart';
+import 'books_listview.dart';
+import 'custom_app_bar.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -6,30 +11,34 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CustomAppBar(),
+        Divider(
+          indent: 10,
+          endIndent: 10,
+          color: Colors.black26,
+        ),
+        BooksListView(),
+        SizedBox(
+          height: 24,
+        ),
+        Text(
+          "Best Seller",
+          //style: Styles.titleMedium,
+        ),
+        Divider(
+          indent: 30,
+          endIndent: 30,
+          thickness: 1.5,
+          color: Colors.black26,
+        ),
+        SizedBox(
+          height: 16,
+        ),
+        //BestSellerListItem(),
       ],
     );
   }
 }
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal:8.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Image.asset("assets/icons/Lit_Libraryy.png",height: 60,width: 150,),
-          Padding(
-            padding: const EdgeInsets.only(right:10.0),
-            child: IconButton(onPressed: (){}, icon: Image.asset("assets/icons/search_icon.png",width: 32,height: 32,),),
-          ),
-          
-        ],
-      ),
-    );
-  }
-}
