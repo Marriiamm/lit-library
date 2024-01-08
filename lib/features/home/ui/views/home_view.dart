@@ -9,7 +9,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(child: Padding(
-        padding: EdgeInsets.symmetric(horizontal:12.0),
+        padding: EdgeInsets.symmetric(horizontal:14.0),
         child: HomeViewBody(),
       )),
     );
