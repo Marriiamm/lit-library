@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'bookdetails_appbar.dart';
-import 'custom_listview_item.dart';
+import 'bookdetails_image.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
@@ -16,7 +16,7 @@ class BookDetailsViewBody extends StatelessWidget {
           SizedBox(
             height: MediaQuery.of(context).size.height *.38,
             //width: 150,
-            child: const CustomListViewItem()),
+            child: const BookDetailsImage()),
         ],
       ),
     );
