@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 import 'bookdetails_appbar.dart';
+import 'custom_listview_item.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 12),
+    return  Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 12),
       child: Column(
         children: [
-          BookdetailsAppBar(),
+          const BookdetailsAppBar(),
+          const SizedBox(height: 10,),
+          SizedBox(
+            height: MediaQuery.of(context).size.height *.38,
+            //width: 150,
+            child: const CustomListViewItem()),
         ],
       ),
     );
