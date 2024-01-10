@@ -30,21 +30,21 @@ class HomeViewBody extends StatelessWidget {
             style: Styles.textStyle20,
           ),
         ])),
-        SliverFillRemaining(
-          child: Column(
-            children: [
-              Divider(
+        SliverToBoxAdapter(
+          child: Divider(
                 indent: 30,
                 endIndent: 30,
                 thickness: 1.5,
                 color: Colors.black26,
               ),
-              SizedBox(
+        ),
+        SliverToBoxAdapter(
+          child: SizedBox(
                 height: 16,
               ),
-              BestSellerListView(),
-            ],
-          ),
+        ),
+        SliverFillRemaining(
+          child: BestSellerListView(),
         ),
       ],
     );
