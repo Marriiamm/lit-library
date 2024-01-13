@@ -18,11 +18,12 @@ class ActionButton extends StatelessWidget {
               borderrRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(16),
                 topLeft: Radius.circular(16),
-              ),
+              ), textt: "19.9&",
             ),
           ),
           Expanded(
             child: CustomButton(
+              textt: "Free Review",
               backgroundColor: kPrimaryClr,
               textColor: Colors.white,
               borderrRadius: BorderRadius.only(
