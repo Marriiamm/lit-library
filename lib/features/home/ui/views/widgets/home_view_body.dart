@@ -32,16 +32,16 @@ class HomeViewBody extends StatelessWidget {
         ])),
         SliverToBoxAdapter(
           child: Divider(
-                indent: 30,
-                endIndent: 30,
-                thickness: 1.5,
-                color: Colors.black26,
-              ),
+            indent: 30,
+            endIndent: 30,
+            thickness: 1.5,
+            color: Colors.black26,
+          ),
         ),
         SliverToBoxAdapter(
           child: SizedBox(
-                height: 16,
-              ),
+            height: 16,
+          ),
         ),
         SliverFillRemaining(
           child: BestSellerListView(),
